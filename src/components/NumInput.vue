@@ -29,7 +29,7 @@ function numChange(btn) {
     <input
       type="number"
       min="1"
-      max="100"
+      max="99"
       step="1"
       value="1"
       id="my-input"
@@ -68,6 +68,7 @@ function numChange(btn) {
   background-color: var(--color-text-gray5);
 }
 input {
+  width: 100%;
   -moz-appearance: textfield;
   text-align: center;
   font-family: montSB;
@@ -98,6 +99,7 @@ button {
 }
 #searchBar__numChangeBox__decreaseBtn,
 #searchBar__numChangeBox__increaseBtn {
+  width: 100%;
   height: fit-content;
 }
 </style>

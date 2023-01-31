@@ -5,7 +5,7 @@ import NumInput from "../components/NumInput.vue";
 </script>
 
 <template>
-  <div class="bannerSection">
+  <section class="bannerSection">
     <div class="container">
       <div class="banner__titleBox">
         <h2 class="banner__subTitle">discover begins with</h2>
@@ -47,11 +47,12 @@ import NumInput from "../components/NumInput.vue";
         </button>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
 .bannerSection {
+  position: relative;
   background-image: url(../assets/img/banner.jpg);
   background-position: center;
   background-size: cover;
@@ -65,7 +66,7 @@ import NumInput from "../components/NumInput.vue";
   padding: 0 2rem;
   max-width: 1290px;
   width: 100%;
-  margin: auto;
+  margin: 10% auto auto;
   display: flex;
   flex-direction: column;
 }
@@ -81,7 +82,7 @@ import NumInput from "../components/NumInput.vue";
 }
 .banner__subTitle {
   font-size: clamp(1rem, 2.5vw, 3rem);
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 .banner__title {
   font-size: clamp(2rem, 6vw, 7.5rem);
@@ -95,15 +96,26 @@ import NumInput from "../components/NumInput.vue";
   flex-direction: row;
 }
 .banner__searchBar {
+  position: absolute;
+  width: 100%;
+  top: 270%;
   background-color: var(--vt-c-black);
   padding: 3.5rem 3rem;
+  background: linear-gradient(0deg, var(--vt-c-black), var(--vt-c-black)),
+    radial-gradient(
+      95.81% 95.81% at 50% 57.76%,
+      rgba(6, 18, 46, 1) 17.19%,
+      rgba(160, 186, 249, 0) 100%,
+      rgba(24, 139, 186, 0.06) 100%
+    );
+  box-shadow: 10px 5px 107px 20px rgba(20, 136, 184, 0.4);
 }
 .banner__searchBar__destSelectBox__pt,
 .banner__searchBar__dateSelectBox__pt,
 .banner__searchBar__numInputBoxt__pt {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 }
 .banner__searchBar__destSelectBox__pt__title,
 .banner__searchBar__dateSelectBox__pt__title,
@@ -117,16 +129,27 @@ import NumInput from "../components/NumInput.vue";
 }
 .banner__searchBar__destSelectBox {
   width: 30%;
+  margin-right: 1.5rem;
 }
 .banner__searchBar__dateSelectBox {
   width: 40%;
+  margin-right: 1.5rem;
 }
 .banner__searchBar__numInputBoxt {
-  width: 30%;
+  width: 15%;
+  margin-right: 1.5rem;
 }
 .banner__searchBar__submitBtn {
-  width: 20%;
-  height: 100%;
-  background-color: var(--vt-c-gray1);
+  width: 15%;
+  color: var(--color-text-white);
+  background-color: var(--vt-c-gray5);
+  text-transform: uppercase;
+  font-family: montSB;
+  font-size: 1.125rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 2.125rem;
+  padding: 0;
 }
 </style>
