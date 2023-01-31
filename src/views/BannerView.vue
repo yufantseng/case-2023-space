@@ -121,10 +121,10 @@ import NumInput from "../components/NumInput.vue";
 .banner__searchBar__dateSelectBox {
   width: 40%;
 }
-.banner__searchBar__numInputBoxt{
+.banner__searchBar__numInputBoxt {
   width: 30%;
 }
-.banner__searchBar__submitBtn{
+.banner__searchBar__submitBtn {
   width: 20%;
   height: 100%;
   background-color: var(--vt-c-gray1);
