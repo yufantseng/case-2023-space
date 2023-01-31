@@ -2,6 +2,7 @@
 import DestSelect from "../components/DestSelect.vue";
 import DateSelect from "../components/DateSelect.vue";
 import NumInput from "../components/NumInput.vue";
+import IconScrollDownArrow from "../components/icons/IconScrollDownArrow.vue";
 </script>
 
 <template>
@@ -12,6 +13,16 @@ import NumInput from "../components/NumInput.vue";
         <h1 class="banner__title">journey</h1>
       </div>
       <div class="banner__searchBar">
+        <div class="banner__searchBar__titleBox">
+          <h3 class="banner__searchBar__titleBox__title">
+            Book your flight to the Stars
+          </h3>
+          <div class="banner__searchBar__titleBox__icon">
+            <IconScrollDownArrow
+              class="banner__searchBar__titleBox__icon__svg"
+            />
+          </div>
+        </div>
         <div class="banner__searchBar__destSelectBox">
           <div class="banner__searchBar__destSelectBox__pt">
             <h3 class="banner__searchBar__destSelectBox__pt__title">from</h3>
@@ -61,6 +72,29 @@ import NumInput from "../components/NumInput.vue";
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.banner__searchBar__titleBox {
+  position: absolute;
+  width: calc(100% - 6rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -40%;
+}
+.banner__searchBar__titleBox__title {
+  font-family: monoR;
+  font-size: 1.5rem;
+  color: var(--color-text-white);
+}
+.banner__searchBar__titleBox__icon {
+  display: inline-flex;
+  align-self: center;
+  top: 0.5rem;
+}
+.banner__searchBar__titleBox__icon__svg {
+  stroke: var(--color-text-white);
+  height: 2rem;
+  width: fit-content;
 }
 .container {
   padding: 0 2rem;
