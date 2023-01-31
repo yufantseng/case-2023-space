@@ -1,0 +1,113 @@
+:root {
+  --vt-c-white: #FFFFFF;
+  --vt-c-gray1: #C6C6C6;
+  --vt-c-gray2: #A8A8A8;
+  --vt-c-gray3: #919191;
+  --vt-c-gray4: #6C6C6C;
+  --vt-c-gray5: #191919;
+  --vt-c-black: #000000;
+}
+
+:root {
+  --color-text-white: var(--vt-c-white);
+  --color-text-gray1: var(--vt-c-gray1);
+  --color-text-gray2: var(--vt-c-gray2);
+  --color-text-gray3: var(--vt-c-gray3);
+  --color-text-gray4: var(--vt-c-gray4);
+  --color-text-gray5: var(--vt-c-gray5);
+  --color-text-black: var(--vt-c-black);
+  /* --section-gap: 160px; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: monoUB;
+  src: url(../assets/font/monoUltraBold.otf);
+}
+
+@font-face {
+  font-family: monoB;
+  src: url(../assets/font/monoBold.otf);
+}
+
+@font-face {
+  font-family: monoM;
+  src: url(../assets/font/monoMedium.otf);
+}
+
+@font-face {
+  font-family: monoR;
+  src: url(../assets/font/monoRegular.otf);
+}
+
+@font-face {
+  font-family: monoL;
+  src: url(../assets/font/monoLight.otf);
+}
+
+@font-face {
+  font-family: montBK;
+  src: url(../assets/font/Montserrat-Black.ttf);
+}
+
+@font-face {
+  font-family: montEB;
+  src: url(../assets/font/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: montB;
+  src: url(../assets/font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: montSB;
+  src: url(../assets/font/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: montM;
+  src: url(../assets/font/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: montR;
+  src: url(../assets/font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: montL;
+  src: url(../assets/font/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: montT;
+  src: url(../assets/font/Montserrat-Thin.ttf);
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--vt-c-black);
+}
+
+/* body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
